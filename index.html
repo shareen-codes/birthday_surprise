@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Abdullah ❤️</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="background-glow"></div>
+  <div id="hearts-container"></div>
+
+  <header class="topbar">
+    <div class="brand">A <span>♥</span></div>
+    <div class="step-label" id="stepLabel">A SPECIAL DAY • 01 / 03</div>
+  </header>
+
+  <main>
+
+    <!-- STEP 1: WELCOME -->
+    <section class="screen active" id="welcome">
+      <div class="hero-content">
+        <div class="eyebrow"><span>✦</span> MADE WITH LOVE <span>✦</span></div>
+
+        <div class="cake">🎂</div>
+
+        <p class="small-heading">Today is all about you</p>
+
+        <h1>Happy Birthday</h1>
+        <h2 class="name">Abdullah <span>♥</span></h2>
+
+        <p class="intro">
+          A little surprise, a few memories,<br>
+          and a letter from the heart.
+        </p>
+
+        <button class="primary-btn" onclick="goToStep(2)">
+          Open Your Surprise <span>♡</span>
+        </button>
+
+        <p class="hint">THERE'S SOMETHING SPECIAL WAITING FOR YOU</p>
+      </div>
+    </section>
+
+    <!-- STEP 2: PHOTO GALLERY -->
+<section class="screen" id="gallery">
+
+  <div class="gallery-top">
+    <button class="gallery-home" onclick="goToStep(1)">♥ Home</button>
+    <div class="gallery-menu">✦ &nbsp; ♡ &nbsp; ✦</div>
+  </div>
+
+  <div class="section-heading gallery-title">
+    <p class="eyebrow">A LITTLE COLLECTION OF US</p>
+    <h2>Our <span>Special Moments</span> ♡</h2>
+    <p>Some pictures, some memories, and a lot of love...</p>
+  </div>
+
+  <div class="gallery-decor decor-left">
+    You make<br>every moment<br>special ♡
+  </div>
+
+  <div class="gallery-decor decor-right">
+    Good Things<br>Take Time<br><span>Just like us ♥</span>
+  </div>
+
+ <div class="photo-grid" id="photoGrid">
+  <button class="photo-card game-photo" data-index="0" type="button">
+    <img src="images/IMJ1.jpeg" alt="Memory 1">
+    <span class="photo-caption">Memory 1 ♡</span>
+    <span class="found-heart">♥</span>
+  </button>
+
+  <button class="photo-card game-photo" data-index="1" type="button">
+    <img src="images/IMJ2.jpeg" alt="Memory 2">
+    <span class="photo-caption">Memory 2 ♡</span>
+    <span class="found-heart">♥</span>
+  </button>
+
+  <button class="photo-card game-photo" data-index="2" type="button">
+    <img src="images/IMJ3.jpeg" alt="Memory 3">
+    <span class="photo-caption">Memory 3 ♡</span>
+    <span class="found-heart">♥</span>
+  </button>
+
+  <button class="photo-card game-photo" data-index="3" type="button">
+    <img src="images/IMJ4.jpeg" alt="Memory 4">
+    <span class="photo-caption">Memory 4 ♡</span>
+    <span class="found-heart">♥</span>
+  </button>
+
+  <button class="photo-card game-photo" data-index="4" type="button">
+    <img src="images/IMJ5.jpeg" alt="Memory 5">
+    <span class="photo-caption">Memory 5 ♡</span>
+    <span class="found-heart">♥</span>
+  </button>
+
+  <button class="photo-card game-photo" data-index="5" type="button">
+    <img src="images/IMJ6.jpeg" alt="Memory 6">
+    <span class="photo-caption">Memory 6 ♡</span>
+    <span class="found-heart">♥</span>
+  </button>
+</div>
+
+<div class="little-game">
+  <h3>💌 Find the Hidden Heart!</h3>
+  <p>One picture has a secret heart. Can you find it?</p>
+  <p id="gameStatus" aria-live="polite">Choose a picture to begin! 💗</p>
+  <p>Attempts: <span id="attemptCount">0</span></p>
+
+  <p id="secretMessage" hidden>
+    You found my secret heart! ❤️
+    <br>
+    You make ordinary memories feel special.
+    <br>
+    Happy Birthday, Abdullah! 🎂
+  </p>
+
+  <button type="button" class="find-btn" id="restartGame">
+    Play Again ↻
+  </button>
+</div>
+
+  <div class="gallery-bottom">
+    <div class="fun-fact">
+      <h3>✧ Fun Fact!</h3>
+      <p>Some memories become<br>little treasures forever.</p>
+      <span>♡</span>
+    </div>
+
+  </div>
+
+  <div class="gallery-navigation">
+    <button class="back-btn" onclick="goToStep(1)">← Back</button>
+    <button class="primary-btn gallery-next" onclick="goToStep(3)">
+      Next <span>→</span>
+    </button>
+  </div>
+
+  <p class="gallery-footer">A LITTLE SURPRISE MADE JUST FOR YOU ♥</p>
+
+</section>
+    <!-- STEP 3: LETTER -->
+    <section class="screen" id="letter">
+      <div class="section-heading">
+        <p class="eyebrow">A FEW WORDS FROM THE HEART</p>
+        <h2>A Letter for <span>You</span></h2>
+        <p>There's something I've been wanting to say...</p>
+      </div>
+
+      <div class="letter-scene">
+        <div class="envelope" id="envelope">
+          <div class="envelope-back"></div>
+          <div class="letter-paper">
+            <p class="letter-title">Dear Abdullah,</p>
+
+            <div class="letter-body">
+              <p>
+                Happy Birthday to someone who deserves so much
+                happiness, peace, and love in life. ❤️
+              </p>
+
+              <p>
+                On your special day, I just want to wish you a
+                beautiful year filled with smiles, new opportunities,
+                and moments that make your heart happy.
+              </p>
+
+              <p>
+                May your dreams come closer, may your worries become
+                lighter, and may you always find reasons to smile.
+                Never forget how special you are and how much goodness
+                you deserve.
+              </p>
+
+              <p>
+                I'm grateful for the memories we share, and I hope
+                life brings you countless beautiful moments ahead.
+                May this birthday be the beginning of a wonderful
+                new chapter in your life.
+              </p>
+
+              <p>
+                Keep smiling, keep believing in yourself, and always
+                remember that you deserve the very best.
+              </p>
+
+              <p class="letter-ending">
+                Happy Birthday once again! ❤️
+              </p>
+            </div>
+
+            <p class="signature">With lots of love, <span>♡</span></p>
+          </div>
+
+          <div class="envelope-front"></div>
+          <div class="envelope-flap"></div>
+          <div class="envelope-heart">♥</div>
+        </div>
+      </div>
+
+      <button class="primary-btn letter-btn" id="openLetterBtn"
+        onclick="openLetter()">
+        Open Your Letter 💌
+      </button>
+
+      <p class="letter-instruction" id="letterInstruction">
+        Tap the button to open your special letter.
+      </p>
+
+      <div class="navigation letter-navigation">
+        <button class="back-btn" onclick="goToStep(2)">← Back to Memories</button>
+        <button class="back-btn" onclick="goToStep(1)">Start Again ↺</button>
+      </div>
+
+      <p class="final-wish" id="finalWish">
+        Made with love, just for Abdullah ♥
+      </p>
+    </section>
+
+  </main>
+
+  <footer>MADE FOR A SPECIAL DAY <span>♥</span></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
